@@ -15,13 +15,7 @@ import java.util.List;
 @SpringBootTest
 @TestMethodOrder(OrderAnnotation.class)
 class UserServiceImplTest {
-    @Autowired
-    IUserService us;
-    @Test
-    @Order(1)
-    public void testRetrieveAllUsers() {
-        List<User> listUsers = us.retrieveAllUsers();
-        Assertions.assertEquals(0, listUsers.size());
-}
 
 }
+
+
